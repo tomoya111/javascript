@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.firstDiv{
+			width: 700px;
+			height:600px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			margin-left: auto;
+			margin-right:auto; 
+		}
+		.attion{
+			font-size: 12px;
+			color: red;
+			letter-spacing: 1px;
+		}
+		form{
+			border-width: 1px;
+			border-style: solid;
+			border-color: lightblue;
+		}
+		.display{
+			background-color: lightblue;
+			color: steelblue;
+			width: 100%;
+			display:inline-block;
+		}
+		input{
+			width: 120px;
+			border-style: inset;
+		}
+		.button{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 120px;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div class="firstDiv">
+		<span class="attion">
+			请注意：带有“*”的项目必须填写		
+		</span>
+		<form>
+			<span class="display">
+				填写您的用户名
+			</span>
+			<table>
+				<tr style="height: 100px;">
+					<td style="font-size: 12px;width: 145px;"><span style="color: red;">*</span>通行证用户名：</td>
+					<td>
+						<input type="text" name="" placeholder="请输入用户名" style="font-size: 12px;">
+						<a href="#" style="font-size: 12px;letter-spacing: 2px">查看用户名是否被占用</a>
+					</td>
+					<td style="font-size: 12px;background-color: whitesmoke;">
+						用户名由a~z的英文字母（不区分大小写）、0~9的数字、点、减号或下划线组成，长度为3~18个字符，只能以数字或者字母开头和结尾，例如：kyzy_001.
+					</td>
+				</tr>
+			</table>
+			<span class="display">
+				请填写安全设置：
+				<span style="font-size: 10px;">（安全设置用于验证帐号和找回密码）</span>
+			</span>
+			<span style="color: red;font-size: 12px;">
+				以下信息对保证您帐号的安全极为重要，请您务必认真填写. 
+			</span>
+			<table style="height: 100px;border-bottom-color: lightcyan;border-bottom-style: solid;border-image-width: 2px;">
+				<tr >
+					<td style="font-size: 12px;width: 145px;">
+						<span style="color: red">*</span>输入登录密码：<br>
+						<span style="color: red">*</span>登录密码确认：
+					</td>
+					<td style="width: 130px;">
+						<input type="text" name="">
+						<input type="text" name="">
+					</td>
+					<td style="font-size: 12px;background-color: whitesmoke;">
+						密码长度为6~16位，区分字母大小写，登录密码可以由字母、数字、特殊字符组成
+						<a href="#">【更多说明】</a>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="height: 100px;border-bottom-style: solid;border-bottom-color: lightcyan;border-image-width: 2px;">
+				<tr>
+					<td style="font-size: 12px;width: 145px;">
+						<span style="color: red">*</span>密码提示问题：<br>
+						<span style="color: red">*</span>密码提示答案：		
+					</td>
+					<td>
+						<input type="text" name="">
+						<input type="text" name="">
+					</td>
+					<td style="background-color: whitesmoke;font-size: 12px;">
+						当您忘记密码时可以由找回密码.例如，问题是“我的哥哥是谁”，答案为“peter2”.问题长度不大于36个字符，一个汉子占两个字符，答案长度在6~30位之间，区分大小写
+						<a href="#">【更多说明】</a>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="height: 100px;border-bottom-width: 2px;border-bottom-color: lightcyan;border-bottom-style: solid;">
+				<tr>
+					<td style="font-size: 12px;width: 145px">
+						<span style="color: red;">*</span>输入安全码：<br>
+						<span style="color: red">*</span>安全码确认：
+					</td>
+					<td>
+						<input type="text" name="">
+						<input type="text" name="">
+					</td>
+                    <td style="font-size: 12px;background-color: whitesmoke;">	
+                    	安全码时您找回密码的重要途径，安全码长度为6~16位，区分字母大小写，由字母，数字特殊字符组成
+                    	<span style="color: red">特别提醒：安全码一旦设定，将不可自行修改.</span><a href="#">【更多说明】</a>
+                    </td>
+				</tr>
+			</table>
+			<input type="button" name="" value="提 交 表 单" class="button">
+		</form>
+	</div>
+</body>
+</html>

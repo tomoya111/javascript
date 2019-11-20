@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.content{
+			width: 60%;
+			border-style: solid;
+			border-width: 1px;
+			border-color: slategray;
+			text-align: center;
+			padding: 10px;
+			/*margin:0 auto;*/
+		}
+		span{
+			display: inline-block;
+			width: 150px;
+			margin-left: 20px;
+
+		}
+		#result{
+			width: 100%;
+		}
+	</style>
+	<script type="text/javascript">
+		function st() {
+			var l=document.getElementById("loc").value;
+			var c=document.getElementById("coc").value;
+			var cname=document.getElementById("cname").value;
+			var bname=document.getElementById("bname").value;
+			var money=document.getElementById("money").value;
+			var p=document.getElementById("product").value;
+			var u=document.getElementById("unit").value;
+			var result=l + "最大" + c + cname + "倒闭了，王八蛋老板"+ bname +"吃喝嫖赌，欠下了"+ money +"个亿，带着他的小姨子跑了!我们没有办法，拿着"+ p +"抵工资!"
+            + "原价都是一"+ u +"多、两" + u +"多、三" + u + "多的"+ p +"，现在全部只卖二十块，统统只要二十块!"+ bname +"王八蛋，你不是人!"
+            + "我们辛辛苦苦给你干了大半年，你不发工资，你还我血汗钱，还我血汗钱!";
+            document.getElementById("result").value=result;
+
+
+		}
+	</script>
+</head>
+<body>
+	<div class="content">
+		<span>地名：</span>
+		<input type="text" name="" id="loc">
+		<span>公司类型：</span>
+		<input type="text" name="" id="coc">
+		<br>
+		<span>公司名称：</span>
+		<input type="text" name="" id="cname">
+		<span>老板姓名：</span>
+		<input type="text" name="" id="bname">
+		<br>
+		<span>money：</span>
+		<input type="text" name="" id="money">
+		<span>产品：</span>
+		<input type="text" name="" id="product">
+		<br>
+		<span>价格计量单位：</span>
+		<input type="text" name="" id="unit">
+		<br>
+		<input type="button" name="" value="生成" id="bu" onclick="st()">
+		<br>
+		<textarea id="result" cols="30" rows="10">
+			
+		</textarea>
+	</div>
+</body>
+</html>

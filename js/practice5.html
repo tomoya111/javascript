@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function cheng() {
+			var num1=parseFloat(document.getElementById("num1").value);
+			var num2=parseFloat(document.getElementById("num2").value);
+			var result=num1*num2;
+			document.getElementById("result").value=result.toExponential();
+		}
+	</script>
+</head>
+<body>
+              <input type="text" id="num1" /> * <input type="text" id="num2" />
+               =<input type="text" id="result" /> <button onclick="cheng()">运算</button>
+</body>
+</html>

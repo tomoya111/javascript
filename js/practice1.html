@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>计算器</title>
+	<script>
+		function f(num1,num2) {
+			return parseInt(num1)+parseInt(num2);
+		}
+		function get() {
+			var num1=document.getElementById("num1").value;
+			var num2=document.getElementById("num2").value;
+			document.getElementById("result").value=f(num1,num2);
+		}
+	</script>
+</head>
+<body>
+	 <input type="text" id="num1"> 
+	 + 
+	 <input type="text" id="num2"> 
+	 = 
+	 <input type="text"  id="result">
+	 <input type="button" name="" value="运算" onclick="get()">
+</body>
+</html>

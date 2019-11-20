@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function calc(argument) {
+			// body...
+			var now=new Date().getTime()/1000/60/60/24/365;
+			var year=document.getElementById("year").value;
+			var month=document.getElementById("month").value;
+			var day=document.getElementById("day").value;
+			var born=new Date(year,month,day).getTime()/1000/60/60/24/365;
+			var age=parseInt(now-born);
+			console.log(age)
+			document.getElementById("age").innerHTML="今年"+age+"岁";
+		}
+	</script>
+</head>
+<body>
+	请输入出生年月日<br>
+	年份<select id="year">
+		<script type="text/javascript">
+			var date=new Date();
+			var year=date.getFullYear();
+			for (var i = 1900; i < year+1; i++) {
+				document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	月份<select id="month">
+		<script type="text/javascript">
+			for (var i = 1; i <=12; i++) {
+				document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	日<select id="day">
+		<script type="text/javascript">
+			for (var i = 1; i <=31; i++) {
+				document.write("<option>"+i+"</option>");
+			}
+		</script>
+	</select>
+	<br>
+	<button onclick="calc()">计算年龄</button><br>
+	<span id="age"></span>
+</body>
+</html>
